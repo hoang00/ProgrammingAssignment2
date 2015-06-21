@@ -1,7 +1,5 @@
-## Program for matrix inversion. Stores a matrix in the cache and then subsequently inverses it
-## functions do
-
-## Makes a special "matrix" and stores it in the cache
+## Overall program stores a matrix in the cache and then subsequently inverses it
+## MakeCacheMatrix makes a special "matrix" and stores it in the cache
 
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
@@ -17,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getmatrix=getmatrix)
 }
 
-## Returns the inverse of the matrix. If already inverse, returns that value
+## cachesolve returns the inverse of the matrix. If already inverse, returns that value
 
 cacheSolve <- function(x=matrix(), ...) {
   m<-x$getmatrix()
